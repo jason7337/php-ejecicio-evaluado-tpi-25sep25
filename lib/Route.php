@@ -3,7 +3,7 @@ namespace lib;
 
 class Route{
     private static $routes = [];
-    private static $URL_BASE="/public";
+    private static $URL_BASE="";
 
     public static function get($uri, $callback){
         self::$routes["GET"][self::$URL_BASE.$uri]=$callback;
